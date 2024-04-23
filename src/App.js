@@ -18,8 +18,8 @@ function App() {
   
     <Router basename='/Ecommerce-web'>
       
-      <PreNavbar />
       <Navbar />
+      <PreNavbar />
       <Slider start={data.banner.start} /> 
       <Offers offer = {data.offer} />
       <Heading text = "HOT ACCESSORIES" />
@@ -28,7 +28,7 @@ function App() {
       <HotAccessoriesMenu />
       
       <Routes>
-      <Route exact path="/music" element={
+        <Route exact path="/Ecommerce-web'" element={
         <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music} />}
 
       />
