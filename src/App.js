@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import PreNavbar from './components/PreNavbar';
 import Slider from './components/Slider';
@@ -25,9 +25,9 @@ function App() {
       <Heading text = "HOT ACCESSORIES" />
       <StarProduct StarProduct={data.starProduct} />
       <Heading text="HOT ACCESSORIES" />
-      <HotAccessoriesMenu />
+      {/* <HotAccessoriesMenu /> */}
       
-      <Routes>
+      {/* <Routes>
       <Route exact path="/music" element={
         <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music} />}
 
@@ -49,7 +49,7 @@ function App() {
 
       />
 
-    </Routes>
+    </Routes> */}
  
 
 
