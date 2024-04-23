@@ -1,6 +1,6 @@
 
 import './App.css';
-import { HashRouter as Router , Routes ,Route } from 'react-router-dom';
+import {BrowserRouter as  Router ,Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import PreNavbar from './components/PreNavbar';
 import Slider from './components/Slider';
@@ -19,8 +19,8 @@ function App() {
   
     <Router>
       
-      <Navbar />
       <PreNavbar />
+      <Navbar />
       <Slider start={data.banner.start} /> 
       <Offers offer = {data.offer} />
       <Heading text = "HOT ACCESSORIES" />
