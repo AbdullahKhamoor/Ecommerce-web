@@ -7,7 +7,7 @@ import Slider from './components/Slider';
 import Offers from './components/Offers';
 import Heading from './components/Heading';
 import StarProduct from './components/StarProduct';
-import HotAccessoriesMenu from './components/HotAccessoriesMenu';
+import HotAccessoriesMenu from './templates/HotAccessoriesMenu';
 import HotAccessories from './components/HotAccessories';
 import data from "./Data/data.json"
 
