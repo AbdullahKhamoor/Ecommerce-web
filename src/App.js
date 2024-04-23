@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter as Router , Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router , Routes ,Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import PreNavbar from './components/PreNavbar';
 import Slider from './components/Slider';
@@ -9,6 +9,7 @@ import Heading from './components/Heading';
 import StarProduct from './components/StarProduct';
 import HotAccessoriesMenu from './components/HotAccessoriesMenu';
 import HotAccessories from './components/HotAccessories';
+import Error from './components/Error';
 import data from "./Data/data.json"
 
 
@@ -16,7 +17,7 @@ import data from "./Data/data.json"
 function App() {
   return (
   
-    <Router basename='/Ecommerce-web'>
+    <Router basename='Ecommerce-web' >
       
       <Navbar />
       <PreNavbar />
@@ -28,7 +29,8 @@ function App() {
       <HotAccessoriesMenu />
       
       <Routes>
-        <Route exact path="/Ecommerce-web'" element={
+        <Route exact path="/" element={<Error/>} />
+        <Route exact path="/music'" element={
         <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music} />}
 
       />
