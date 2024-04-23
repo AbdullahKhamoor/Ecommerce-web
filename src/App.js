@@ -9,7 +9,7 @@ import Heading from './components/Heading';
 import StarProduct from './components/StarProduct';
 import HotAccessoriesMenu from './components/HotAccessoriesMenu';
 import HotAccessories from './components/HotAccessories';
-import Error from './components/Error';
+
 import data from "./Data/data.json"
 
 
@@ -29,7 +29,7 @@ function App() {
       <HotAccessoriesMenu />
       
       <Routes>
-        <Route exact path="/" element={<Error/>} />
+
         <Route exact path="/music'" element={
         <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music} />}
 
