@@ -1,0 +1,34 @@
+.HotAccessoriesMenu {
+    display: flex;
+    justify-content: center;
+
+}
+
+.HotAccessoriesLink {
+    text-decoration: none;
+    color: rgba(94, 94, 94);
+    margin: 1vmax;
+    padding: 0.5vmax 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.HotAccessoriesLink:hover {
+    text-decoration: none;
+    color: orangered;
+    border-bottom: 1px solid orangered;
+}
+
+
+@media only screen and (max-width:429px) and (min-width:320px) {
+    .HotAccessoriesMenu {
+        display: flex;
+        justify-content: center;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width:320px) and (min-width:250px){
+.HotAccessoriesMenu{
+    font-size: 9px;
+}
+}

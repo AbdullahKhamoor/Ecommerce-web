@@ -1,0 +1,41 @@
+.HotAccessories {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+}
+
+.HotAccessories>div:first-child>img {
+    /* cursor: pointer; */
+    transition: all 0.5s;
+    width: 22vw;
+}
+
+.HotAccessories>div:first-child>img:hover {
+    transform: translate(-0.4vmax);
+    box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+}
+
+.HotAccessories>div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width:768px) and (min-width:426px){
+.HotAccessories > div:first-child img{
+    width: 197px;
+}
+}
+
+@media only screen and (max-width:426px) and (min-width:250px) {
+    .HotAccessories{
+        flex-direction: column;
+        
+    }
+
+    
+   .HotAccessories > div:first-child img{
+        width: 100%;
+
+    }
+}
