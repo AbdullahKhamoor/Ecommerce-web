@@ -15,8 +15,8 @@ import data from "./Data/data.json"
 
 function App() {
   return (
-
-    <Router>
+  
+    <Router basename='/Ecommerce-web'>
       
       <PreNavbar />
       <Navbar />
