@@ -1,6 +1,6 @@
 
 import './App.css';
-import {BrowserRouter as   Router , Routes, Route  } from 'react-router-dom';
+import {BrowserRouter  , Routes, Route  } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import PreNavbar from './components/PreNavbar';
 import Slider from './components/Slider';
@@ -17,9 +17,9 @@ import data from "./Data/data.json"
 function App() {
   return (
   
-    <Router>
-      
-      <PreNavbar />
+    <BrowserRouter basename='/Ecommerce-web'>
+    
+    <PreNavbar />
       <Navbar />
       <Slider start={data.banner.start} /> 
       <Offers offer = {data.offer} />
@@ -55,7 +55,7 @@ function App() {
  
 
 
-    </Router>
+    </BrowserRouter>
   
   );
 }
