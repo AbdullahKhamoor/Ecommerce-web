@@ -30,7 +30,7 @@ function App() {
       
       <Routes>
 
-        <Route exact path="/music" element={
+        <Route exact path="/Ecommerce-web" element={
         <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music} />}
 
       />
