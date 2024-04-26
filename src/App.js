@@ -29,7 +29,7 @@ function App() {
       <HotAccessoriesMenu />
       
       <Routes>
-        <Route path="Ecommerce-web" element={<App />} />
+        <Route exact path='https://AbdullahKhamoor.github.io/Ecommerce-web' element={<App />} />
         <Route exact path="/music" element={
         <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music} />}
 
