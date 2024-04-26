@@ -17,7 +17,7 @@ import data from "./Data/data.json"
 function App() {
   return (
   
-    <BrowserRouter basename='/Ecommerce-web'>
+    <BrowserRouter basename='Ecommerce-web'>
     
     <PreNavbar />
       <Navbar />
@@ -29,24 +29,24 @@ function App() {
       <HotAccessoriesMenu />
       
       <Routes>
-        {/* <Route path="Ecommerce-web"/> */}
+        <Route path="Ecommerce-web" element={<App />} />
         <Route exact path="/music" element={
         <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music} />}
 
       />
-      <Route exact path="/smartDevice" element={
+        <Route exact path="/smartDevice" element={
         <HotAccessories smartDevice={data.hotAccessories.smartDevice} smartDeviceCover={data.hotAccessoriesCover.smartDevice} />}
 
       />
-      <Route exact path="/home" element={
+        <Route exact path="/home" element={
         <HotAccessories home={data.hotAccessories.home} homeCover={data.hotAccessoriesCover.home} />}
 
       />
-      <Route exact path="/lifestyle" element={
+        <Route exact path="/lifestyle" element={
         <HotAccessories lifeStyle={data.hotAccessories.lifeStyle} lifeStyleCover={data.hotAccessoriesCover.lifeStyle} />}
 
       />
-      <Route exact path="/mobileAccessories" element={
+        <Route exact path="/mobileAccessories" element={
         <HotAccessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories} />}
 
       />
