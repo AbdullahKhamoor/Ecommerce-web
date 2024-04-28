@@ -9,6 +9,8 @@ import Heading from './components/Heading';
 import StarProduct from './components/StarProduct';
 import HotAccessoriesMenu from './components/HotAccessoriesMenu';
 import HotAccessories from './components/HotAccessories';
+import ProductReviews from './components/ProductReview';
+import Videos from './components/Videos';
 
 import data from "./Data/data.json"
 
@@ -29,7 +31,7 @@ function App() {
       <HotAccessoriesMenu />
       
       <Routes>
-        <Route exact path='https://AbdullahKhamoor.github.io/Ecommerce-web' element={<App />} />
+        <Route exact path='/https://AbdullahKhamoor.github.io/Ecommerce-web' element={<App />} />
         <Route exact path="/music" element={
         <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music} />}
 
@@ -52,8 +54,12 @@ function App() {
       />
 
     </Routes>
- 
+    <Heading text = "PRODUCT REVIEW"/>
+      <ProductReviews ProductReviews = {data.productReviews} />
+      <Heading text="VIDEOS" />   
 
+      <Videos Videos = {data.videos} />     
+      <Heading text= "IN THE PRESS" />
 
     </BrowserRouter>
   

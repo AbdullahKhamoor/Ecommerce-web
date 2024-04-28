@@ -1,0 +1,72 @@
+.ProductReviews {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    justify-content: center;
+}
+
+@media only screen and (max-width:1024px) and (min-width:768px) {
+    .ProductReviews{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    justify-content: center;
+
+    } 
+    
+    .ProductReviewCard img{
+        width: 100%;
+    }
+    .ProductReviewCard h3 {
+            font-size: large;
+        
+    }
+        .ProductReviewCard span {
+            font-size: 3vmax;
+        }
+    
+        .ProductReviewCard b {
+            font-size: 3vmax;
+        }
+    }
+
+
+@media only screen and (max-width:768px) and (min-width:425px) {
+    .ProductReviews{
+        flex-direction: column;
+    }
+    .ProductReviewCard img{
+        width: 100%;
+    }
+    .ProductReviewCard h3{
+        font-size: small;
+    }
+    .ProductReviewCard span{
+        font-size: 2vmax;
+    }
+    .ProductReviewCard b{
+        font-size: 2vmax;
+    }
+}
+
+@media only screen and (max-width:425px) and (min-width:250px) {
+    .ProductReviews {
+            flex-direction: column;
+        }
+    .ProductReviewCard img {
+        width: 100%;
+    }
+
+    .ProductReviewCard h3 {
+        font-size: small;
+    }
+
+    .ProductReviewCard span {
+        font-size: 2vmax;
+    }
+
+    .ProductReviewCard b {
+        font-size: 2vmax;
+    }
+}

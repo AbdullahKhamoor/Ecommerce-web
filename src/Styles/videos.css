@@ -1,0 +1,23 @@
+.videos {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+}
+
+@media only screen and (max-width:1024px) and (min-width:768px) {
+    .videos{
+         /* flex-direction: column; */
+    }
+}
+
+@media only screen and (max-width:768px) and (min-width:425px) {
+    .videos {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:425px) and (min-width:250px) {
+    .videos {
+        flex-direction: column;
+    }
+}

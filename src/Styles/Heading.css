@@ -17,3 +17,16 @@
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-weight: 100;
 }
+
+
+@media only screen and (max-width:768) and (min-width:425){
+    .heading p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:425px) and (min-width:250px) {
+.heading p {
+        text-align: center;
+    }
+}
