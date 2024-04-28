@@ -11,6 +11,8 @@ import HotAccessoriesMenu from './components/HotAccessoriesMenu';
 import HotAccessories from './components/HotAccessories';
 import ProductReviews from './components/ProductReview';
 import Videos from './components/Videos';
+import Banner from './components/Banner';
+import Footer from './components/Footer';
 
 import data from "./Data/data.json"
 
@@ -60,6 +62,8 @@ function App() {
 
       <Videos Videos = {data.videos} />     
       <Heading text= "IN THE PRESS" />
+      <Banner banner = {data.banner} />
+      <Footer footer={data.footer} />
 
     </BrowserRouter>
   

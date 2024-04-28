@@ -30,5 +30,6 @@
 @media only screen and (max-width:320px) and (min-width:250px){
 .HotAccessoriesMenu{
     font-size: 9px;
+    text-align: center;
 }
 }
