@@ -69,7 +69,8 @@
 .footerBorder {
     background-color: rgba(37, 37, 37);
     color: white;
-} */
+    /* display: none; */
+} 
 
  .footerBorder>div {
     border-top: 1px solid rgba(197, 197, 197, 0.185);
@@ -86,4 +87,16 @@
     .footer{
         display: none;
     }
+    .footerBorder > div{
+        width: 39vmax;
+    }
+    .input{
+        width: 146px;
+    }
+    .inputs{
+        /* width: 100%; */
+    }
+        .PreFooter2>div>div>input{
+            width: 19.4vmax;
+        }
 }

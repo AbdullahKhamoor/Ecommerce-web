@@ -34,9 +34,9 @@ const Footer = ({footer}) => {
           <div className="PreFooter2">
               <div><p>LET'S STAY IN TOUCH</p><span>Get updates on sales specials and more</span></div>
               <div>
-                  <div>
-                      <input type="email" name='email' placeholder='Enter email address' />
-                      {/* <button>{''}</button> */}
+                  <div className='input'>
+                      <input className='inputs' type="email" name='email' placeholder='Enter email address' />
+                   
                   </div>
                   <span>Thanks. You're on our email list for special offers.</span>
               </div>
